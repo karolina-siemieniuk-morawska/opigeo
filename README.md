@@ -1,2 +1,2 @@
-# opigeo
+# Opigeo
 Website for Opigeo company
