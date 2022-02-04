@@ -297,6 +297,83 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 20px 0 50px 0;
+  overflow: hidden;
+}
+.section-bg {
+  background-color: rgba(61, 139, 204, 0.1);
+}
+.section-title {
+  padding-bottom: 40px;
+  text-align: center;
+  color: rgba(61, 139, 204, 1);
+  margin: 1rem 0 3rem 0;
+  text-transform: uppercase;
+  font-size: 46px;
+  z-index: 3;
+  font-weight: 400;
+  padding-bottom: 0;
+  letter-spacing: 2px;
+}
+.section-title p {
+  margin-bottom: 0;
+}
+@media(max-width: 576px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+/*--------------------------------------------------------------
+# Swiper
+--------------------------------------------------------------*/
+.swiper .swiper-carousel, .swiper .swiper-slider {
+  overflow: hidden;
+}
+.swiper .swiper-item {
+  box-sizing: content-box;
+  height: 570px;
+  width: auto;
+}
+.swiper .swiper-item img {
+  box-sizing: content-box;
+  height: auto;
+  max-height: 500px;
+  width: 100%;
+}
+.swiper .swiper-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 20px 0;
+  text-align: center;
+}
+.swiper .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid rgba(61, 139, 204, 1);
+}
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(61, 139, 204, 1);
+}
+@media (max-width: 768px) {
+  .swiper .swiper-item {
+    height: 470px;
+  }
+}
+@media (max-width: 576px) {
+  .swiper .swiper-item {
+    height: 300px;
+  }
+}
+/*--------------------------------------------------------------
 # Banner Section
 --------------------------------------------------------------*/
 #banner {
@@ -306,6 +383,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
   padding: 0;
+  margin-bottom: 40px;
 }
 #banner:before {
   content: "";
@@ -364,7 +442,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #banner {
-    margin-top: 60px;
     height: calc(83vh - 60px);
   }
 }
@@ -392,224 +469,19 @@ h1, h2, h3, h4, h5, h6 {
   #banner h2 {
     text-align: center;
   }
-}
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 50px 0;
-  overflow: hidden;
-}
-.section-bg {
-  background-color: rgba(61, 139, 204, 0.1);
-}
-.section-title {
-  padding-bottom: 40px;
-  text-align: center;
-}
-.section-title h2 {
-  font-size: 46px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  letter-spacing: 2px;
-  color: rgba(61, 139, 204, 1);
-}
-.section-title p {
-  margin-bottom: 0;
-}
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #f7f7f7;
-  min-height: 40px;
-  margin-top: 72px;
-}
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 60px;
+  #banner img {
+    margin-bottom: 70px;
+    max-height: 150px;
   }
 }
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
+#banner.subpage-banner {
+  height: 30vh;
 }
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
-# Swiper
---------------------------------------------------------------*/
-.swiper .swiper-carousel, .swiper .swiper-slider {
-  overflow: hidden;
-}
-.swiper .swiper-item {
-  box-sizing: content-box;
-  height: 600px;
-  width: auto;
-}
-.swiper .swiper-item img {
-  box-sizing: content-box;
-  height: auto;
-  max-height: 550px;
-  width: 100%;
-}
-.swiper .swiper-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 20px 0;
-  text-align: center;
-}
-.swiper .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.swiper .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid rgba(61, 139, 204, 1);
-}
-.swiper .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(61, 139, 204, 1);
-}
-/*--------------------------------------------------------------
-# Steps
---------------------------------------------------------------*/
-.steps {
-  padding: 50px 0 40px 0;
-}
-.steps .row {
-  overflow: hidden;
-}
-.steps .content-item {
-  padding: 40px;
-  border-left: 1px solid #d4e9e6;
-  border-bottom: 1px solid #d4e9e6;
-  margin: -1px;
-}
-.steps .content-item span {
-  display: block;
-  font-size: 24px;
-  font-weight: 400;
-  color: rgba(61, 139, 204, 1);
-}
-.steps .content-item h4 {
-  font-size: 28px;
-  font-weight: 400;
-  padding: 0;
-  margin: 20px 0;
-  color: #21413c;
-}
-.steps .content-item p {
-  color: #aaaaaa;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-}
-@media (max-width: 768px) {
-  .steps .content-item {
-    padding: 40px 0;
-  }
-}
-
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-.features .nav-tabs {
-  border: 0;
-}
-.features .nav-link {
-  border: 0;
-  padding: 20px;
-  transition: 0.3s;
-  color: #21413c;
-}
-.features .nav-link:hover {
-  color: rgba(61, 139, 204, 1);
-}
-.features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-}
-.features .nav-link p {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.features .nav-link.active {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.12);
-}
-.features .nav-link.active h4 {
-  color: rgba(61, 139, 204, 1);
-}
-.features .tab-pane.active {
-  -webkit-animation: slide-down 0.5s ease-out;
-  animation: slide-down 0.5s ease-out;
-}
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .box {
   margin: 2.5rem 0;
-}
-.services .section-title {
-  color: rgba(61, 139, 204, 1);
-  margin: 1rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 50px;
 }
 .services .box .icon-box {
   margin-bottom: 4rem;
@@ -623,11 +495,6 @@ section {
 .services .description img {
   float: right;
   margin: 0 0 10px 2.5rem;
-}
-@media (max-width: 992px) {
-  .services .description {
-    margin: 2rem 0 2rem 0;
-  }
 }
 .services .icon-box {
   padding: 30px;
@@ -661,16 +528,47 @@ section {
   text-align: center;
   color: rgba(61, 139, 204, 1);
 }
+@media (max-width: 992px) {
+  .services .description {
+    margin: 2rem 0 2rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .services .description img {
+    float: none;
+    max-width: 300px;
+    height: auto;
+    margin: 1rem auto 3rem auto;
+  }
+}
 /*--------------------------------------------------------------
 # Geology and Geophysics
 --------------------------------------------------------------*/
-.geo h4 {
-  margin: 2.5rem 0 1.5rem 0;
+.geo {
+  padding-top: 0;
 }
-.geo .float-container img {
+.geo h4 {
+  margin: 3.5rem 0 1.5rem 0;
+}
+.geo .float-container-left img {
+  float: left;
+  max-width: 350px;
+  margin: 0 2.5rem 10px 0;
+}
+.geo .float-container-right img {
   float: right;
-  max-width: 300px;
+  max-width: 450px;
   margin: 0 0 10px 2.5rem;
+}
+@media (max-width: 576px) {
+  .geo .float-container-right img,
+  .geo .float-container-left img {
+    max-width: 300px;
+    margin: 1rem auto;
+    float: none;
+    display: block;
+
+  }
 }
 /*--------------------------------------------------------------
 # Contamination surveys
