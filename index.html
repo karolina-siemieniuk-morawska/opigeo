@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -68,26 +68,29 @@
     <!-- ======= Geofizyka i Geotechnika ======= -->
     <section id="services" class="services">
       <div class="container">
-        <a href="geology-and-geophysics.html">
-          <div class="box"data-aos="fade-up">
-            <h2 class="section-title">Geologia i geotechnika</h2>
-            <div class="d-flex icon-box">
+        <div class="big-box">
+          <div class="d-flex">
+            <div>
+              <h2 class="big-box-title mb-3">Geologia i geotechnika</h2>
               <p class="description">
-                <img src="assets/img/domy_jednorodzinne_1.jpg" alt="dom jednorodzinny" height="300">
-                W ramach tych dziedzin wykonujemy zespół badań służących rozpoznaniu warunków podłoża gruntowego, w następstwie których sporządza się dokumentacje geotechniczne i geologiczne.
-    
+                W ramach tych dziedzin wykonujemy zespół badań mających na celu rozpoznanie warunków podłoża gruntowego, w następstwie których sporządza się dokumentacje geotechniczne i geologiczne.
+                
                 Badania geotechniczne stanowią podstawowe źródło informacji o podłożu gruntowym. W ramach badań geotechnicznych sporządza się Opinię Geotechniczną i Dokumentację Badań Podłoża Gruntowego stanowiące element Projektu Budowlanego. Badania te wynikają z Rozporządzenia o geotechnicznych warunkach posadowienia.
                 
                 Badania geologiczno-inżynierskie wynikają z prawa geologicznego i górniczego i sporządza się je w złożonych i skomplikowanych warunkach gruntowych oraz w przypadku złożonych inwestycji zakwalifikowanych do II lub III kategorii geotechnicznej.
                 Badania geologiczno-inżynierskie przedstawia się w Dokumentacji Geologiczno-Inżynierskiej poprzedzonej sporządzonym Projektem Robót Geologicznych. Dokumentacje te podlegają zatwierdzeniu decyzją administracyjną.
               </p>
             </div>
+            <div class="ms-lg-5 d-flex flex-column justify-content-between pt-3">
+              <img src="https://i.imgur.com/B8pIRkp.png" alt="dom jednorodzinny" height="300">
+              <a href="geology-and-geophysics.html" class="box-btn">Sprawdź</a>
+            </div>
           </div>
-        </a>
+        </div>
 
         <!-- Badania zanieczyszczeń gruntu -->
         <div class="row">
-          <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
               <a href="contamination-surveys.html">
                 <div class="icon"><i class="bx bx-test-tube"></i></div>
@@ -95,12 +98,13 @@
                 <p class="description">
                   Analiza stanu środowiska gruntowo-wodnego w  kierunku potencjalnego występowania zanieczyszczeń gruntu, w tym gleby, gruntu i wody. Badania te są szczególnie istotne przy podejmowaniu inwestycji na terenie poprzemysłowym lub obiektów stanowiących potencjalne źródło zanieczyszczeń.
                 </p>
+                <a href="contamination-surveys.html" class="box-btn">Sprawdź</a>
               </a>
             </div>
           </div>
 
           <!-- Domy jednorodzinne i wielorodzinne -->
-          <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
               <a href="geology-and-geophysics.html#houses-and-buildings">
                 <div class="icon"><i class="bx bx-building-house"></i></div>
@@ -108,12 +112,13 @@
                 <p class="description">
                   Badania pod budowę domów jednorodzinnych, wielorodzinnych i na potrzeby przydomowych oczyszczalni ścieków. Oferujemy badania i doradztwo przed zakupem nieruchomości. Wykonamy Opinię Geotechniczną niezbędną przy sporządzaniu Projektu Budowlanego.
                 </p>
+                <a href="geology-and-geophysics.html#houses-and-buildings" class="box-btn">Sprawdź</a>
               </a>
             </div>
           </div>
 
           <!-- Geofizyka -->
-          <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
               <a href="geology-and-geophysics.html#geophysics">
                 <div class="icon"><i class="bx bx-analyse"></i></div>
@@ -121,6 +126,7 @@
                 <p class="description">
                   Badania geofizyczne zapewniają nieinwazyjne rozpoznanie budowy podłoża i wszelkich występujących w nim anomalii w sposób ciągły. Badania takie są od wielu lat powszechnie wykorzystywane do rozwiązywania zagadnień zarówno inżynierskich jak i naukowych.
                 </p>
+                <a href="geology-and-geophysics.html#geophysics" class="box-btn">Sprawdź</a>
               </a>
             </div>
           </div>
@@ -142,11 +148,9 @@
             <div class="footer-info">
               <h3>OpiGeo</h3>
               <p>
-                Potockich 112/32<br>
-                04-534 Warszawa<br>
-                <!-- NIP: -->
+                NIP:
                 <br>
-                <!-- REGON: -->
+                REGON:
                 <br>
                 <strong>Telefon:</strong> +48 505 863 005<br>
                 <strong>Email:</strong> info@example.com<br>
@@ -155,7 +159,6 @@
           </div>
 
           <div class="col-lg-6 col-sm-6 footer-links d-sm-block d-none">
-            <h4>Menu</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Strona główna</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="geology-and-geophysics.html">Geologia i Geotechnika</a></li>
@@ -178,7 +181,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

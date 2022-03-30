@@ -379,7 +379,8 @@ section {
 #banner {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("../assets/img/stonepit.jpg") center center;
+  background: url("https://i.imgur.com/GIBEQB3.jpg") center;
+  background-color: black;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -406,7 +407,7 @@ section {
 #banner h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 56px;
   color: #fff;
 }
@@ -430,7 +431,8 @@ section {
   margin-top: 30px;
 }
 #banner .btn-get-started:hover {
-  background: rgb(22, 122, 204);
+  background: #fff;
+  color: rgba(61, 139, 204, 1);
 }
 #banner .btn-get-started p {
   margin-bottom: 0;
@@ -483,53 +485,90 @@ section {
 .services .box {
   margin: 2.5rem 0;
 }
-.services .box .icon-box {
-  margin-bottom: 4rem;
+.services .big-box {
+  margin-bottom: 7rem;
 }
-.services .box .icon-box .description {
+.services .big-box .big-box-title {
+  font-weight: 700;
+}
+.services .big-box .description {
   font-size: 15px;
   line-height: 28px;
   text-align: justify;
   color: #000;
-}
-.services .description img {
-  float: right;
-  margin: 0 0 10px 2.5rem;
+  margin-bottom: 0;
 }
 .services .icon-box {
-  padding: 30px;
+  padding: 60px 20px 30px 20px;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   background: rgba(61, 139, 204, 0.1);
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
-  text-align: center;
   margin-bottom: 2rem;
-  color: rgba(61, 139, 204, 1);
+  overflow: visible;
 }
 .services .icon-box:hover {
   box-shadow: 0 2px 29px 0 rgba(61, 139, 204, 0.4);
 }
 .services .icon i {
-  font-size: 48px;
+  font-size: 60px;
   line-height: 1;
   margin-bottom: 15px;
-  color: rgb(255, 0, 55);
+  color: #428DFF;
+  position: absolute;
+  top: -24px;
+  left: calc(50% - 30px);
 }
-.services .title {
+.services .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  text-align: center;
   color: #111;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .icon-box .description {
+    color: #111;
+}
+.services .box-btn {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 10px 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  background: rgba(61, 139, 204, 1);
+  color: #fff;
+  z-index: 2;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.services .box-btn:hover {
+  background: #fff;
+  color: rgba(61, 139, 204, 1);
+  box-shadow: 0 2px 29px 0 rgba(61, 139, 204, 0.4);
 }
 
-.services .icon-box .description {
-  text-align: center;
-  color: rgba(61, 139, 204, 1);
-}
 @media (max-width: 992px) {
-  .services .description {
+  .services .big-box > div {
+    flex-direction: column;
+  }
+  .services .big-box img {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .services .big-box .description {
     margin: 2rem 0 2rem 0;
   }
 }
@@ -541,6 +580,7 @@ section {
     margin: 1rem auto 3rem auto;
   }
 }
+
 /*--------------------------------------------------------------
 # Geology and Geophysics
 --------------------------------------------------------------*/
@@ -770,6 +810,7 @@ section {
 }
 #footer .footer-top img {
   max-width: 100%;
+  margin-top: -15px;
 }
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
