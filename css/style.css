@@ -319,7 +319,7 @@ section {
 }
 @media(max-width: 576px) {
   .section-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 /*--------------------------------------------------------------
@@ -636,9 +636,28 @@ section {
   margin: 40px auto;
 }
 .contamination-surveys .container img {
-  margin-left: 2rem;
-  height: 300px;
-  float: right;
+  max-width: 500px;
+  max-height: 400px;
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+.contamination-surveys ul {
+  padding-left: 0;
+}
+.contamination-surveys ul.column {
+  width: 500px;
+  margin-left: 3rem;
+}
+.contamination-surveys ul li {
+  list-style-type: none;
+  padding: 10px 0;
+  display: flex;
+}
+.contamination-surveys ul li:before {
+  content: url('https://i.imgur.com/yeJZDq8.png?1') ;
+  display: block;
+  margin-right: 15px;
 }
 .contamination-surveys .text p {
   margin-bottom: 1rem;
