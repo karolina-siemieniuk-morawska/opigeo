@@ -20,7 +20,6 @@ a:hover {
   color: rgb(18, 123, 209);
   text-decoration: none;
 }
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -335,9 +334,9 @@ section {
 }
 .swiper .swiper-item img {
   box-sizing: content-box;
-  height: auto;
-  max-height: 500px;
+  height: 500px;
   width: 100%;
+  border-radius: 10px;
 }
 .swiper .swiper-item h4 {
   font-size: 14px;
@@ -363,10 +362,16 @@ section {
   .swiper .swiper-item {
     height: 470px;
   }
+  .swiper .swiper-item img {
+  height: 400px;
+}
 }
 @media (max-width: 576px) {
   .swiper .swiper-item {
     height: 300px;
+  }
+  .swiper .swiper-item img {
+    height: 250px;
   }
 }
 /*--------------------------------------------------------------
@@ -679,6 +684,7 @@ section {
 @media(max-width: 992px) {
   .contamination-surveys .container img {
     margin-left: 0;
+    max-width: 100%;
   }
 }
 /*--------------------------------------------------------------
@@ -686,6 +692,19 @@ section {
 --------------------------------------------------------------*/
 .contact p {
   text-align: justify;
+}
+.contact ul {
+  padding-left: 0;
+}
+.contact ul li {
+  list-style-type: none;
+  padding: 5px 0;
+  display: flex;
+}
+.contact ul li:before {
+  content: url('https://i.imgur.com/yeJZDq8.png?1') ;
+  display: block;
+  margin-right: 15px;
 }
 .contact .info {
   padding: 30px;
@@ -831,7 +850,6 @@ section {
     transform: rotate(360deg);
   }
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
