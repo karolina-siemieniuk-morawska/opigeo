@@ -418,7 +418,6 @@ section {
   font-size: 36px;
 }
 #banner .btn-get-started {
-  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
@@ -538,7 +537,6 @@ section {
     color: #111;
 }
 .services .box-btn {
-  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
@@ -884,7 +882,6 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
   color: #fff;
 }
 #footer .footer-top h4 {
