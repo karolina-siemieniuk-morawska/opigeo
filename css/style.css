@@ -50,10 +50,6 @@ a:hover {
   opacity: 1;
 }
 
-[data-aos-delay] {
-  transition-delay: 0s !important;
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -221,16 +217,14 @@ a:hover {
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 30px;
+  right: 8px;
 }
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  top: 60px;
   right: 15px;
-  bottom: 15px;
-  left: 15px;
   padding: 10px 0;
   background-color: #fff;
   overflow-y: auto;

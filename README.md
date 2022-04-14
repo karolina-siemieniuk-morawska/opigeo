@@ -1,2 +1,2 @@
-# Opigeo
-Website for Opigeo company
+# OpiGeo
+Website for OpiGeo company

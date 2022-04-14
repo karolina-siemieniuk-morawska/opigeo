@@ -111,47 +111,33 @@
       }
     }
   });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.swiper-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    // spaceBetween: 10,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 'auto',
-        spaceBetween: 20
+  
+  /* Slider */
+  if (document.getElementById('swiper-slider')) {
+    new Swiper('.swiper-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
       },
-
-      1200: {
-        slidesPerView: 'auto',
-        spaceBetween: 20
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 'auto',
+          spaceBetween: 20
+        },
+  
+        1200: {
+          slidesPerView: 'auto',
+          spaceBetween: 20
+        }
       }
-    }
-  });
-
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
-  });
-
+    });
+  }
 })()
