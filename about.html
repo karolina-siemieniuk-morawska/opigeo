@@ -66,49 +66,49 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swiper-item">
-                <img src="https://i.imgur.com/Ul06SKR.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/islandia.webp" class="testimonial-img" alt="">
                 <h4>Ciosy bazaltowe - Islandia</h4>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="swiper-item">
-                <img src="https://i.imgur.com/9dBHfka.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/ukraina.webp" class="testimonial-img" alt="">
                 <h4>Flisz karpacki - Ukraina</h4>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="swiper-item">
-                <img src="https://i.imgur.com/D8pxnJ9.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/jordania.webp" class="testimonial-img" alt="">
                 <h4>Formy erozyje - Jordania</h4>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="swiper-item">
-                <img src="https://i.imgur.com/wJRbpOD.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/portugalia.webp" class="testimonial-img" alt="">
                 <h4>Ostańce na brzegu oceanu - Portugalia</h4>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="swiper-item">
-                <img src="https://i.imgur.com/7Pn4dHw.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/czarnogora_2.webp" class="testimonial-img" alt="">
                 <h4>Pionowe warstwy skalne - Czarnogóra</h4>
               </div>
             </div>
             
             <div class="swiper-slide">
               <div class="swiper-item">
-                <img src="https://i.imgur.com/DPsabcF.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/czarnogora.webp" class="testimonial-img" alt="">
                 <h4>Struktury fałdowe - Czarnogóra</h4>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="swiper-item">
-                <img src="https://i.imgur.com/q57vi8O.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/norwegia.webp" class="testimonial-img" alt="">
                 <h4>Uskok - Norwegia</h4>
               </div>
             </div>
@@ -180,55 +180,68 @@
       },
       "areaServed": {
         "@type": "AdministrativeArea",
-        "name": "Warszawa"
-      },
-      "availableChannel": {
-        "serviceLocation": {
-          "@type": "Office",
-          "name": "Warszawa",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Potockich 112/32",
-            "addressLocality": "Warszawa",
-            "addressRegion": "Mazowieckie",
-            "postalCode": "04-534"
-          }
-        }
+        "name": "mazowieckie"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Badania gruntów",
+        "name": "Badania geologiczne i geofizyczne",
         "itemListElement": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania geologiczne"
-            }
+            "@type": "OfferCatalog",
+            "name": "Badania gruntów",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badania geologiczne"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badania geofizyczne"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badanie zanieczyszczenia"
+                }
+              }
+            ]
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania geofizyczne"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania zanieczyszczenia"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Dokumentacja geotechniczna"
-            }
-          },
+            "@type": "OfferCatalog",
+            "name": "Dokumentacja geotechniczna",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "na potrzeby posadowienia budynku"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "geologiczno-inżynierska"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "projekty planu remediacji w uzgodnieniu z RDOŚ"
+                }
+              }
+            ]
+          }
         ]
-      },
+      }
     }
   </script>
 </body>

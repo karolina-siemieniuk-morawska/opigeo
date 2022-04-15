@@ -196,55 +196,68 @@
       },
       "areaServed": {
         "@type": "AdministrativeArea",
-        "name": "Warszawa"
-      },
-      "availableChannel": {
-        "serviceLocation": {
-          "@type": "Office",
-          "name": "Warszawa",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Potockich 112/32",
-            "addressLocality": "Warszawa",
-            "addressRegion": "Mazowieckie",
-            "postalCode": "04-534"
-          }
-        }
+        "name": "mazowieckie"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Badania gruntów",
+        "name": "Badania geologiczne i geofizyczne",
         "itemListElement": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania geologiczne"
-            }
+            "@type": "OfferCatalog",
+            "name": "Badania gruntów",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badania geologiczne"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badania geofizyczne"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badanie zanieczyszczenia"
+                }
+              }
+            ]
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania geofizyczne"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania zanieczyszczenia"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Dokumentacja geotechniczna"
-            }
-          },
+            "@type": "OfferCatalog",
+            "name": "Dokumentacja geotechniczna",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "na potrzeby posadowienia budynku"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "geologiczno-inżynierska"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "projekty planu remediacji w uzgodnieniu z RDOŚ"
+                }
+              }
+            ]
+          }
         ]
-      },
+      }
     }
   </script>
 </body>

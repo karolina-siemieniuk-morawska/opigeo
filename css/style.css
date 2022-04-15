@@ -220,6 +220,11 @@ a:hover {
   top: 30px;
   right: 8px;
 }
+@media (min-width: 768px) {
+  .navbar-mobile .mobile-nav-toggle {
+    right: 3rem;
+  }
+}
 .navbar-mobile ul {
   display: block;
   position: absolute;
@@ -229,6 +234,11 @@ a:hover {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+}
+@media (min-width: 768px) {
+  .navbar-mobile ul {
+    right: 3rem;
+  }
 }
 .navbar-mobile > ul > li + li {
   margin: 0;
@@ -374,7 +384,7 @@ section {
 #banner {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("https://i.imgur.com/GIBEQB3.jpg") center;
+  background: url("../assets/img/tlo.webp") center;
   background-color: black;
   background-size: cover;
   position: relative;
@@ -603,7 +613,7 @@ section {
   display: flex;
 }
 .geo ul li:before {
-  content: url('https://i.imgur.com/yeJZDq8.png?1') ;
+  content: url('../assets/img/shovel.png') ;
   display: block;
   margin-right: 15px;
 }
@@ -652,7 +662,7 @@ section {
   display: flex;
 }
 .contamination-surveys ul li:before {
-  content: url('https://i.imgur.com/yeJZDq8.png?1') ;
+  content: url('../assets/img/shovel.png') ;
   display: block;
   margin-right: 15px;
 }
@@ -694,7 +704,7 @@ section {
   display: flex;
 }
 .contact ul li:before {
-  content: url('https://i.imgur.com/yeJZDq8.png?1') ;
+  content: url('../assets/img/shovel.png') ;
   display: block;
   margin-right: 15px;
 }

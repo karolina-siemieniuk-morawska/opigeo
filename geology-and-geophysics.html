@@ -65,14 +65,14 @@
                   Przeprowadzamy geologiczne i geotechniczne badania gruntu, rozpoznajemy warunki gruntowo - wodne oraz określamy warunki posadowienia obiektów budowlanych. Badania wykonujemy na potrzeby wszelkich inwestycji zarówno kubaturowych, jak i liniowych.
                 </p>
               </div>
-              <img src="https://i.imgur.com/j0hihkv.jpg" alt="badania">
+              <img src="assets/img/teren_2.webp" alt="badania">
             </div>
 
             <div class="d-flex">
               <p>
                 Właściwy dobór technologii fundamentowania wymaga rzetelnego rozpoznania warunków gruntowych, które pozwala na właściwe  zaprojektowanie posadowienia obiektu lub zastosowanie technologii wzmocnienia podłoża. Optymalne dobranie projektu do występujących w podłożu parametrów gwarantuje bezpieczeństwo inwestycji oraz pozwala znacząco obniżyć koszty.
               </p>
-              <img src="https://i.imgur.com/slzUKnI.png" alt="wyniki">
+              <img src="assets/img/nmt4.webp" alt="wyniki">
             </div>
           </div>
 
@@ -127,7 +127,7 @@
                   </li>
                 </ul>
               </div>
-              <img src="https://i.imgur.com/EFMZ517.jpg" alt='house' height="auto" />
+              <img src="assets/img/geologia.webp" alt='house' height="auto" />
             </div>
           </div>
 
@@ -145,7 +145,7 @@
                   <li>sejsmikę refrakcyjna i refleksyjną</li>
                 </ul>
               </div>
-              <img src="https://i.imgur.com/XTIlPQV.jpg" alt='badania' height="280" />
+              <img src="assets/img/scan.webp" alt='badania' height="280" />
             </div>
           </div>
         </div>
@@ -213,55 +213,68 @@
       },
       "areaServed": {
         "@type": "AdministrativeArea",
-        "name": "Warszawa"
-      },
-      "availableChannel": {
-        "serviceLocation": {
-          "@type": "Office",
-          "name": "Warszawa",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Potockich 112/32",
-            "addressLocality": "Warszawa",
-            "addressRegion": "Mazowieckie",
-            "postalCode": "04-534"
-          }
-        }
+        "name": "mazowieckie"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Badania gruntów",
+        "name": "Badania geologiczne i geofizyczne",
         "itemListElement": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania geologiczne"
-            }
+            "@type": "OfferCatalog",
+            "name": "Badania gruntów",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badania geologiczne"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badania geofizyczne"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Badanie zanieczyszczenia"
+                }
+              }
+            ]
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania geofizyczne"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Badania zanieczyszczenia"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Dokumentacja geotechniczna"
-            }
-          },
+            "@type": "OfferCatalog",
+            "name": "Dokumentacja geotechniczna",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "na potrzeby posadowienia budynku"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "geologiczno-inżynierska"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "projekty planu remediacji w uzgodnieniu z RDOŚ"
+                }
+              }
+            ]
+          }
         ]
-      },
+      }
     }
   </script>
 </body>
