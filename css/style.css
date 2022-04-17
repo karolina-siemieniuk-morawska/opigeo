@@ -384,7 +384,7 @@ section {
 #banner {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("../assets/img/tlo.webp") center;
+  background: url("../assets/img/tlo.jpeg") center;
   background-color: black;
   background-size: cover;
   position: relative;
