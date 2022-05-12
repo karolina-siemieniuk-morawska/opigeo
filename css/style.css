@@ -301,6 +301,7 @@ a:hover {
 section {
   padding: 20px 0 50px 0;
   overflow: hidden;
+  text-align: justify;/* # about */
 }
 .section-bg {
   background-color: rgba(61, 139, 204, 0.1);
@@ -316,6 +317,7 @@ section {
   font-weight: 600;
   padding-bottom: 0;
   letter-spacing: 1px;
+
 }
 .section-title p {
   margin-bottom: 0;
@@ -484,7 +486,7 @@ section {
   height: 30vh;
 }
 /*--------------------------------------------------------------
-# Services
+# Services - Index?
 --------------------------------------------------------------*/
 .services .box {
   margin: 2.5rem 0;
@@ -500,6 +502,7 @@ section {
   line-height: 28px;
   color: #000;
   margin-bottom: 0;
+  text-align: justify;/* # index geo&geo */
 }
 .services .icon-box {
   padding: 60px 20px 30px 20px;
@@ -539,6 +542,8 @@ section {
 }
 .services .icon-box .description {
     color: #111;
+    text-align: left;
+  /* # index 3 dolne prostokaty */
 }
 .services .box-btn {
   text-transform: uppercase;
@@ -589,10 +594,13 @@ section {
 .geo div.d-flex {
   margin-bottom: 5rem;
   justify-content: space-between;
+  text-align: justify;/* # text */
 }
 .geo h3 {
   font-weight: 700;
   margin-bottom: 2rem;
+  text-align: left;
+  /* # nagłówki nr 2: */
 }
 .geo img {
   max-width: 500px;
@@ -611,6 +619,7 @@ section {
   list-style-type: none;
   padding: 5px 0;
   display: flex;
+   /* # oferujemy: */
 }
 .geo ul li:before {
   content: url('../assets/img/shovel.png') ;
